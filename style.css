@@ -1,0 +1,715 @@
+
+body {
+
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
+
+}
+
+.container {
+  
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+/* ...................................................Header...................................... */
+
+header {
+  background: #000;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+}
+
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #174C73;
+  text-decoration: none;
+}
+
+.button{
+
+  background: #00c6ff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease; 
+}
+
+
+.button:hover{
+  background-color:  #00ffaf;  
+  transform: scale(1.05);    
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+
+/*................... ........................Hero........................................... */
+
+/* Hero Section */
+
+.hero {
+
+  padding: 60px 0;
+  background: #000; 
+
+}
+
+.hero .container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+
+}
+
+
+.hero-image img {
+
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;  
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.hero-text {
+
+  max-width: 500px;
+
+}
+
+.hero-text h1 {
+
+  color: orange;
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+
+}
+
+.hero-text p {
+
+  color: #9E9E9E;
+  font-size: 16px;
+  margin-bottom: 20px;
+
+}
+
+
+.hero-text .button {
+
+  background: #00c6ff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+
+}
+
+.hero-text .button:hover {
+  background-color: #00ffaf;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+}
+
+/* ...............................................NAV.................................... */
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #1B6AA1;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: 0.3s;
+}
+
+
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  list-style: none;
+  padding: 10px 0;
+  min-width: 160px;
+  border-radius: 4px;
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li {
+  display: block;
+}
+
+nav ul li ul.dropdown li a {
+  display: block;
+  padding: 10px 15px;
+  color: #4FB1FF;
+}
+
+nav ul li ul.dropdown li a:hover {
+  background: #4fb0ff46;
+}
+
+
+/* ......................./....................................About.................................. */
+
+.about {
+  padding: 60px 0;
+  background: #000; 
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;  
+}
+
+
+.about-image {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  order: 2;
+  border-radius: 12px;  
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.about-text {
+  max-width: 500px;
+  order: 1;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.about-text h4 {
+  color: #919191;
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.about-text h1{
+
+  color:#B65506;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+
+}
+
+.about-text p {
+  color: #9E9E9E;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+
+.about-text button {
+  background: #00c6ff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.about-text button:hover {
+  background-color: #00ffaf;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.4);
+}
+
+
+
+/*...................................................... text waraper ..................................*/
+
+
+ .text-wrapper1 {
+    position: relative;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+ 
+
+    .background-text {
+      font-size: 75px;
+      color: #1a0e00; 
+      position: absolute;
+      top: -30px;
+      left: 380px;
+      z-index: 0;
+    }
+
+    .foreground-text {
+      font-size: 45px;
+      color: #ff6600; 
+      position: relative;
+      top: 0;
+      left: 480px;
+      z-index: 1;
+    }}
+
+
+/* ........................................................................................................................... */
+
+
+
+ .game-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px;
+  flex-wrap: wrap;
+}
+
+.game-item {
+  position: relative;
+  width: 250px;
+  /* height: 300px; */
+  /* overflow: hidden; */
+  border-radius:  0px;
+}
+
+.game-item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+}
+
+.game-item:hover img {
+  transform: scale(1.05);
+}
+
+.game-title {
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  text-align: center;
+  color: #00bfff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 1px 1px 3px #000;
+  font-size: 14px;
+}
+
+
+
+.livebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.livebtn button {
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid #00c6ff;
+  background-color: rgba(255, 255, 255, 0);
+  color: #0772e4e5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 220px;  /* ensures nice size */
+  text-align: center;
+}
+
+/* 🔥 Hover effect */
+.livebtn button:hover {
+  background-color: #2f92fc;
+  color: white;
+  transform: translateY(-3px); /* lift effect */
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+
+
+
+/*.............................................. about us ............................*/
+
+.abutus {
+  padding: 40px 15px;
+  background: #000; 
+}
+
+.abutus .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.abutus-image {
+  max-width: 100%; 
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.abutus-image img {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+}
+
+.abutus-text {
+  max-width: 600px;
+}
+
+.abutus-text h4 {
+  color: #919191;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.abutus-text h1 {
+  color: #B65506;
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
+
+.abutus-text h1 span {
+  display: block;
+}
+
+.abutus-text p {
+  color: #9E9E9E;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.abutus-text button {
+  background: linear-gradient(90deg, #00c6ff, #00ffaf);
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.abutus-text button:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*.......................................... text wrapper 1 ................................................*/
+
+
+.text-wrapper2 {
+      position: relative;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+ 
+
+    .background-text {
+      font-size: 80px;
+      color: #1a0e00; 
+      position: absolute;
+      top: 0;
+      left: 370px;
+      z-index: 0;
+    }
+
+    .foreground-text {
+      font-size: 48px;
+      color: #ff6600; 
+      position: relative;
+      top: 35px;
+      left: 480px;
+      z-index: 1;
+    }}
+
+/* ............................................................................................................................... */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 300px 300px;
+  gap: 10px;
+  max-width: 1200px;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+
+.item {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+
+
+.item1 {
+  background-image: url('motocross.jpg'); 
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
+.item2 {
+  background-image: url('fantasy.jpg');
+  grid-column: 2;
+  grid-row: 1;
+}
+
+
+.item3 {
+  background-image: url('football.jpg'); 
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+
+.item4 {
+  background-image: url('archery.jpg'); 
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+/* ..................................RATING............................... */
+
+.card1 {
+  max-width: 600px;
+  margin: 80px auto;  
+  text-align: center;
+}
+
+.name {
+  color: #B65506;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.stars {
+  font-size: 20px;
+  color: white;
+  margin: 10px 0;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+
+
+/*......................................... TABLE ................................*/
+
+
+ .text-wrapper3 {
+      position: relative;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+ 
+
+    .background-text {
+      font-size: 75px;
+      color: #1a0e00; 
+      position: absolute;
+      top: -35px;
+      left: 410px;
+      z-index: 0;
+    }
+
+    .foreground-text {
+      font-size: 45px;
+      color: #ff6600; 
+      position: relative;
+      top: 0;
+      left: 480px;
+      z-index: 1;
+    }}
+
+/* .......................................................................................................................... */
+
+ .packages {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .package {
+      background-color: transparent;
+      text-align: center;
+      width: 280px;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .package h2 {
+      color: #d46c13;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 32px;
+      color: #d46c13;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+  .features p {
+
+      margin: 10px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px dotted #444;
+    }
+    .features p {
+      margin: 10px 0;
+    }
+
+    .order-btn {
+      margin-top: 30px;
+      padding: 12px 24px;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      background: #00c6ff;
+      box-shadow: 0 0 0 2px #a4f0a5;
+      transition: all 0.3s ease;
+    }
+
+    .order-btn:hover {
+      opacity: 0.9;
+    }
+
+/* .................................................................................................. */
+.text-wrapper4 {
+      position: relative;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+ 
+
+    .background-text {
+      font-size: 80px;
+      color: #1a0e00; 
+      position: absolute;
+      top: 0;
+      left: 190px;
+      z-index: 0;
+    }
+
+    .foreground-text {
+      font-size: 48px;
+      color: #ff6600; 
+      position: relative;
+      top: 35px;
+      left: 350px;
+      z-index: 1;
+    }}
+    
+/* ........................................................... */
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.card2 {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+}
+
+.card2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card2 h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card2 hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin-top: 15px;
+}
+
+
+/* ......................................................................... */
+
+
+
+/*...............................................................................................*/
+
+
+
